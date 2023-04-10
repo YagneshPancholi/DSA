@@ -1,4 +1,4 @@
-package Theory;
+package theory;
 
 public class SieveOfEratosthenes
 {
@@ -29,8 +29,6 @@ public class SieveOfEratosthenes
 				System.out.println(i + " ");
 			}
 		}
-		{
 
-		}
 	}
 }
