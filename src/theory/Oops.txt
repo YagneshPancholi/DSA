@@ -1,0 +1,96 @@
+Object ==> Entities in real WOrld
+Classes ==> group of these Entities
+
+Access Modifiers
+		  withinClass |	withinPackage|	outsidePackage	  |	outsidePackage
+					  |				 |	By SubClasses only|	
+                      |              |        			  |
+Private =  		Y     |   N			 |		N 			  |		N	
+Default = 		Y     |	  Y		     |		N			  |		N
+Protected = 	Y	  |   Y 		 |		Y 			  |		N
+Public = 		Y	  |   Y			 |		Y             |		Y
+
+"this" Keyword is used to refer to current object
+
+Encapsulation:
+Wrapping up of data & methods under a single unit. 
+It is used to implements data hiding.
+we hide useless data for user Or 
+Very sensitive data that we don't want to show to user.
+with help of "Access Modifiers"
+
+Constructors:
+a special method which is invoked automatically at the time of 
+object creation.
+It has same name as class.
+Don't have return type.
+they are called only once, at object creation.
+Memory allocation happen when constructor is called.
+If and only if u don't have constructor in your class JAVA will create default constructor.
+
+3 types of constructor:
+parameterized, non-parameterized, copy 
+
+Shallow copy --> reference is passed , like non-primitive datatypes
+Deep copy --> another memory will be allocated , like primitive datatypes
+
+JAVA garbage collector will automatically delete nonUsed memory
+
+
+Inheritance:
+super - sub classes
+parent - child classes
+
+
+Polymorphism:
+Method Overloading --> comiple time polymorphism -->
+achieved by diff. numbers of args & diff. datatypes 
+ 
+
+
+Method Overriding --> run time polymorphism -->
+achieved by same method name but definition is different in parent & child class
+
+Abstraction:
+Abstract classes & Interface
+Abstract classes:
+- cannot create instance of abstract class --> cannot create object
+- can have abstract as well as non-abstract methods
+- can have constructor --> it is used to intiate child values 
+
+parentClass constructor called then childClass constructor is called
+
+
+Interface is blueprint of class.
+- help to implement multiple inheritance
+- achieve total abstraction
+- all methods by default public abstract(No definition of method is there)
+- variables in Interface are Final, Public, Static
+
+
+static keyword:
+It is used to share the same variable or method of a given class.
+we can assign static to --> properties, Functions, Blocks, Nested classes
+Only one memory location will assigned for static 
+
+
+Super keyword  to refer Immediate parent class object
+
+
+We cannot assign Private, Protacted to a class
+
+class Vehicle()
+class Car extends Vehicle()
+
+Vehicle v = new Car(); this is correct
+parent reference = child object
+
+
+one interface can extends other interface
+one class can extends other class
+one class can implement other interface
+
+List, Map, Set, Collection are interfaces
+but ArrayList, HashMap, HashSet are classes
+
+

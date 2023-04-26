@@ -1,0 +1,36 @@
+Used to make JAVA application loosely coupled -Dependency Injection or Inversion of Control
+means easily changable code and less dependence	
+UI layer - Service Layer - DataAccess layer - DB
+Controller - services - DAO - DB
+
+Spring Modules :
+Spring COre : core , beans , context,spEl
+Aspect Oriented Programming - code decoupling 
+
+ Spring boot = jar file 
+ embedded tomcat server
+ no xml 
+
+ Programmatic Configurations ;
+ POM - Project Object Model
+ starter POM --> pull all jars according to dependencies
+
+ ways of creating project:
+ 1.create a maven project and add starter dependencies
+ 2.Use Spring Initializr
+ 3.Use IDE like STS
+ 4.Spring Boot CLI
+ 
+ #  POJO class contains variables and their Getters and Setters.
+ # Spring IOC Container--> give it Bean(POJO), configuration file
+ create object , hold them in memory, inject 
+ 
+ 
+ Dependency Injection can be done in 2 wasy
+ 1. Using setter Injection
+ 2. Using Constructor Injection
+ 
+ #Configuration File is where we declare beans & its dependency
+ 
+ 
+

@@ -3,6 +3,7 @@ package java8;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class DemoForEach
 {
@@ -23,6 +24,8 @@ public class DemoForEach
 		}
 		Date d = new Date();
 		System.out.println((d.getTime() - c.getTime()) + " milisecond");
+		Consumer<Integer> con = i -> System.out.println(i);
+		myList.forEach(con);
 	}
 
 }
